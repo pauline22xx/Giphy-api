@@ -1,0 +1,44 @@
+body {
+	background-color: pink;
+}
+h1,h2,h3,h4,h5 {
+  color: black;
+  font-family: 'helvetica';
+}
+form {
+  float: left;
+  width: 100%;
+}
+.giphy-tag-wrapper {
+  float: left;
+  width: 100%;
+  padding: 20px;
+}
+.tag-item {
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'helvetica';
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 3px solid #ce4cce;
+  border-radius: 3px;
+  background-color: transparent;
+  margin: 5px;
+}
+.tag-item:hover {
+  background-color: #d8bad8;  
+}
+.content-wrapper {
+  float: left;
+  width: 100%;
+  padding: 0 25px;
+}
+.search-col {
+  float: left;
+  width: 70%;
+}
+.add-tag-col {
+  float: left;
+  width: 30%;
+}
