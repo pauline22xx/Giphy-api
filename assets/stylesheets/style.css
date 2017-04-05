@@ -1,8 +1,12 @@
-body {
-	background-color: pink;
+html,body {
+  margin: 0;
+  padding: 0;
 }
 * {
   box-sizing: border-box;
+}
+body {
+  background-color: #fbdcee;
 }
 h1,h2,h3,h4,h5 {
   color: black;
@@ -15,9 +19,9 @@ form {
 form input[type='text'] {
   float: left;
   width: 70%;
-  font-size: 16px;
-  font-family: helvetica;
+  font-size: 15px;
   padding: 10px 20px;
+  font-family: 'helvetica';
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   border: 1px solid #ddd;
@@ -26,19 +30,21 @@ form input[type='submit'] {
   float: left;
   width: 30%;
   border: 0;
-  font-family: helvetica;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
+  font-family: 'helvetica';
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   font-size: 16px;
-  padding: 11px;
-  background-color: #f55fc5;
+  padding: 11px 10px 10px 10px;
+  background-color: #a8ffd8;
+  font-weight: bolder;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
 }
 form input[type='submit']:hover {
-  background-color: lightgrey;
+  background-color: #a8ffd8;
 }
-
 .giphy-tag-wrapper {
   float: left;
   width: 100%;
@@ -47,17 +53,20 @@ form input[type='submit']:hover {
 .tag-item {
   color: black;
   font-size: 16px;
-  text-transform: uppercase;
   font-family: 'helvetica';
+  text-transform: uppercase;
   font-weight: bold;
   padding: 10px 20px;
-  border: 3px solid #ce4cce;
+  border: 3px solid #a8ffd8;
   border-radius: 3px;
   background-color: transparent;
+  transition: 0.2s all ease-in-out;
   margin: 5px;
 }
 .tag-item:hover {
-  background-color: #d8bad8;  
+  background-color: #a8ffd8;
+  border: 3px solid #a8ffd8;
+  color: #000;
 }
 .content-wrapper {
   float: left;
@@ -72,19 +81,18 @@ form input[type='submit']:hover {
   float: left;
   width: 30%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.search-content {
+  float: left;
+  width: 100%;
+}
+.gif-container {
+  float: left;
+  width: 25%;
+  height: 200px;
+  overflow: hidden;
+}
+.gif-container img {
+  float: left;
+  width: 100%;
+  height: auto;
+}
